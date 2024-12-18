@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="/logincss.css">
+<body>
+    <div class="main">
+        <div class="landing_logo">
+            <img class="logo" id="logo" src="/images/login/kisspng-emoji-monkey-sticker-meaning-text-messaging-emoji-face-5ac2f8820cd326.6597495315227270420525.png">
+        </div>
+        <p class="landing_text">Login to <span class="landing_text_black">Telegram</span></p>
+        <div class="login_content">
+            <form  class="form" method="post" action="/teleweb/user">
+                <p class="username">Username</p>
+                <input type="text" class="uname" name="email" id="email" placeholder="Email id">
+                <p class="password">Password</p>
+                <input type="password" class="pass" name="pass" id="pass" placeholder="Enter password">
+                <input type="submit" value="Login" class="open_btn">
+                <p class="white">Don't have accoutn ? &nbsp;</p><a href="/teleweb/register">Create Now</a>
+            </form>
+            <div class="error">
+                <%if(repassed){%>
+                    <%= repassed %> 
+                <%}%>
+            </div>
+        </div>
+    </div>
+    <script>
+        let monkey_img=document.getElementById("logo");
+
+        const password = document.getElementById('pass');
+
+    password.addEventListener("focus", () => {
+        console.log("image changed");
+        monkey_img.src="/images/login/kisspng-face-with-tears-of-joy-emoji-the-evil-monkey-5af7b53def7ff6.795909701526183229981.png";
+    });
+    password.addEventListener("focusout", () => {
+        console.log("image removed");
+        monkey_img.src="/images/login/kisspng-emoji-monkey-sticker-meaning-text-messaging-emoji-face-5ac2f8820cd326.6597495315227270420525.png";
+    });
+    </script>
+</body>
+</html>

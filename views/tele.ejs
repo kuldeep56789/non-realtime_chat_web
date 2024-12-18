@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="/mainstyle.css">
+<body>
+    <div class="main">
+        <div class="side_menu">
+            <div class="nav">
+                <img class="logo" src="/images/telegram-gif.gif" alt="">
+            </div>
+            <div class="user_info">
+            <div class="user">
+            <h1>Welcome To <span style="color:blue;">Aura &#128640; </span></h1>
+            <h1>Dear , <%= result[0].username %></h1>
+            <h1><%= result[0].email %></h1>
+            </div>
+            <div class="message">
+                <a href="/tele/<%= result[0].email %>/communicate"><button class="button-35" role="button">communicate</button></a>
+                <a href="/tele/<%= result[0].email %>/SeeMessages"><button class="button-35" role="button">See Messages</button></a>
+            </div>
+            </div>
+        </div>
+            
+    </div>
+</body>
+</html>

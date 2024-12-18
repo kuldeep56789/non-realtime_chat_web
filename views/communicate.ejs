@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body,html{
+        height: 97%;
+        width: 99%;
+    }
+    input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #000000; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+.firstname{
+    background-color: lightgray;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #1177aa;
+  padding: 20px;
+  height: 96%;
+  width: 98%;
+}
+form{
+    height: 100%;
+    width: 100%;
+}
+</style>
+<body>
+    <div class="container">
+        <form action="/tele/communicate/send" method="post" >
+      
+          <label for="fname">your ID</label>
+          <input type="text" readonly id="fname" class="firstname" name="sender" placeholder="<%= email %>" value="<%= email %>">
+      
+          <label for="lname">reciver's ID</label>
+          <input type="text" id="lname" name="reciver" placeholder="recivers ID">
+      
+          <label for="subject">Message</label>
+          <textarea id="subject" name="message" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Send Message">
+      
+        </form>
+      </div>
+</body>
+</html>

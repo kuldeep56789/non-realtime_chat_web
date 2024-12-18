@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #0088cc;
+    font-family: sans-serif;
+}
+
+nav {
+    width: 100%;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: larger;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 50rem;
+    text-decoration: none;
+    list-style: none;
+}
+
+nav ul li {
+    transition: 0.2s;
+}
+
+nav ul li:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    border-bottom: 1px solid #0088cc;
+}
+
+.twitt, .lang {
+    transition: 0.5s ease-in-out;
+}
+
+.twitt:hover, .lang:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    border-bottom: 1px solid #0088cc;
+}
+
+.decs {
+    display: flex;
+    margin: 1px;
+}
+
+.main {
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+}
+
+.latest {
+    display: flex;
+}
+
+.cont {
+    margin-left: 0.2rem;
+    margin-bottom: 0.2rem;
+    width: 16rem;
+}
+
+.content a {
+    text-decoration: none;
+}
+
+.line {  
+    background-color: #0088cc;
+    border-radius: 5px;
+    width: 0.2rem;
+}
+
+.open_btn{
+    position: relative;
+    left: 50%;
+    height: 2rem;
+    width: 10rem;
+    background-color: #0088cc;
+    color: black;
+    border-radius: 10%;
+}
+
+
+.open_btn:hover{
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out;
+    background-color: black;
+    color: #0088cc;
+    border-radius: 15%;
+}
+
+/*************************************    Device   **************************************/
+
+.device {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.landing_text {
+    color: black;
+    font-size: 3rem;
+    width: 100%;
+    text-align: center;
+}
+
+.landing_text_black {
+    color: #0088cc;
+}
+
+.android {
+    height: 25rem;
+    width: 20rem;
+}   
+
+.android:hover{
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out;
+}
+
+.hoverd {
+    margin-left: 3rem;
+    height: 17rem;
+    width: 14rem;
+}
+
+.phone {
+    margin-left: 0;
+}
+
+.details {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-left: 2rem;
+}
+
+.pc {
+    margin-top: 2rem;
+}
+
+.ios_img {        
+    width: 150px;
+    height: 250px;
+}
+
+.android_img{
+    width: 230px;
+    height: 400px;
+    margin-left: 4rem;
+}
+
+.ios:hover, .pc:hover {
+    transform: scale(1.1);
+    transition: 1s;
+    cursor: pointer;
+}
+
+/*********************** CARDS **********************************/
+
+.recentNews {
+    margin-top: 3rem;
+    width: 100%;
+}
+
+.News_title {
+    width: 100%;
+    display: flex;
+    font-size: 2rem;
+    justify-content: center;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 1.5rem 0;
+}
+
+.card {
+    margin: 1rem;
+    height: 15rem;
+    width: 10rem;
+}
+
+.card_img {
+    height: 10rem;
+    width: 10rem;
+}
+
+.card_title {
+    font-size: 1.5rem;
+}
+
+.card_content {
+    color: black;
+}
+
+/******************* footer *****************************/
+
+.footer {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.foot_desc {
+    margin-top: 1rem;
+    width: 20rem;
+}
+
+.links {
+    width: 100%;
+    max-width: 25%;
+    margin: 1rem 3rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.foot_title {
+    color: black;
+}
+
+.foot_title:hover {
+    cursor: pointer;
+    border-bottom: 1px solid black;
+}
+
+.foor_link:hover {
+    cursor: pointer;
+    border-bottom: 1px solid #0088cc;
+}
+
+/*********************************** responsive ************************************************/
+
+/* Extra small devices (phones, portrait mode) */
+@media (max-width: 575.98px) { 
+    .decs {
+        display: none;
+    }
+    .landing_text {
+        font-size: 2.5rem;
+    }
+    .logo {
+        height: 8rem;
+        width: 8rem;
+    }
+    .android {
+        height: 20rem;
+        width: 15rem;
+    }
+    .cards {
+        margin: 1rem 0.5rem;
+    }
+    .card {
+        height: 12rem;
+        width: 8rem;
+    }
+    .News_title {
+        font-size: 1.8rem;
+    }
+    .footer {
+        flex-direction: column;
+    }
+}
+
+/* Small devices (tablets, portrait mode) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .main {
+        flex-direction: column;
+    }
+    .landing_text {
+        font-size: 3rem;
+    }
+    .logo {
+        height: 9rem;
+        width: 9rem;
+    }
+    .cards {
+        margin: 1rem;
+    }
+    .card {
+        height: 13rem;
+        width: 9rem;
+    }
+    .footer {
+        flex-direction: column;
+    }
+}
+
+/* Medium devices (tablets, portrait mode) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .main {
+        flex-direction: row;
+    }
+    .landing_text {
+        font-size: 4rem;
+    }
+    .logo {
+        height: 10rem;
+        width: 10rem;
+    }
+    .cards {
+        margin: 1.5rem 1rem;
+    }
+    .card {
+        height: 14rem;
+        width: 10rem;
+    }
+}
+
+/* Large devices (desktops, laptops, portrait mode) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .landing_text {
+        font-size: 4.5rem;
+    }
+    .logo {
+        height: 10rem;
+        width: 10rem;
+    }
+}
+
+/* Extra large devices (desktops) */
+@media (min-width: 1200px) {
+    .landing_text {
+        font-size: 5rem;
+    }
+    .logo {
+        height: 10rem;
+        width: 10rem;
+    }
+}
+
+

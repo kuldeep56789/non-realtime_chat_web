@@ -1,0 +1,66 @@
+.main{
+    height: 100vh;
+    align-items: normal;
+    justify-content: center;
+    background-color: black;
+    color: whitesmoke;
+}
+
+.landing_logo{
+    height: 0;
+
+    border-radius: 0;
+    margin: 2rem;
+}
+.logo{
+    height: 6rem;
+    width: 6rem;
+}
+.landing_text{
+    color: whitesmoke;
+    height: 0;
+    font-size: 2rem;
+}
+
+.error{
+    margin-top: 1rem;
+    color: red;
+    
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 23rem;
+    width: 17rem;
+    border: 1px solid white;
+}
+
+.uname,.pass{
+    color: black;
+    font-size: 1rem;
+    height: 1.6rem;
+    width: 90%;
+    border-radius: 5%;
+    border: solid #0088cc;
+}
+
+.username,.password{
+    font-size: 1.5rem;    
+}
+
+.open_btn{
+    font-size: 1.6rem;
+    position: static;
+}
+
+.open_btn:hover{
+    background-color:white;
+    color:  #0088cc;
+}
+
+.white{
+    color:white;
+}
